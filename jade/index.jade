@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet", href="../css/jquery.bxslider.css")
+	link(rel="stylesheet", href="../css/normalize.css")
+	link(rel="stylesheet", href="../css/style.css")
+	link(rel="stylesheet", href="../css/main.css")
+	link(rel="stylesheet", href="../css/responsive.css")
+body
+	header.header
+		.container
+			figure.logo
+				img(src="../img/logo-header.png", alt="")
+			nav.menu
+				ul.list
+					li.item: a(href="#") About The Team
+					li.item: a(href="#") Services
+					li.item: a(href="#") Products
+					li.item: a(href="#") Contact
+	section
+		.cont-main
+			figure.image-main
+				img(src="../img/image-center.png", alt="")
+	section
+		.container.section2
+			.slider
+				ul.bxslider
+					li
+						.panels
+							.panel
+								figure.image-panel
+									img(src="../img/image1.jpg", alt="")
+								span.title Awesome design features
+								p.texto He hasn't got a fair dinkum to he's got a massive drongo. Lets go some rotten no worries gutful of fair dinkum. As stands out like uluru shaza got us some wuss. Lets get some rotten.
+							.panel
+								figure.image-panel
+									img(src="../img/image2.png", alt="")
+								span.title Easy to customise
+								p.texto  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ut iste accusamus, esse illo atque debitis eaque, expedita dignissimos veniam est aut ab quo libero facere inventore, ullam obcaecati laboriosam?
+							.panel
+								figure.image-panel
+									img(src="../img/image3.png", alt="")
+								span.title Bright eye catching design
+								p.texto  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, optio, modi! Incidunt repellat sunt, odit accusantium impedit. Voluptates harum minus, libero magni. Neque, harum. Officia alias doloribus, corporis. Consequuntur, quibusdam.
+	section
+		.container.section3
+			.box
+				figure.logo
+					img(src="../img/logo-cta.png", alt="")
+				.ctu		
+					p.texto Want to purchase the App?
+					a.dowload(href="") Dowload
+					p.texto or
+					a.buy(href="") Buy Now
+	footer
+		.container
+			.menu
+				ul.list
+					li.item: a(href="") Features
+					li.item: a(href="") Specifications
+					li.item: a(href="") Gallery
+					li.item: a(href="") How To's
+	script(src="../js/jquery-3.1.0.min.js")
+	script(src="../js/jquery-3.1.0.min.js")
+	script $(document).ready(function(){$('.bxslider').bxSlider({auto:true});});
+		
