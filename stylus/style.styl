@@ -9,8 +9,16 @@ fondo-marillo=#FFB300
 sombra-amarilla=#FF6B00
 fondo-celeste=#00A2CB
 sombra-celeste=#005678
+negro=#000000
+sombra-negra=#2B3C45
+deslizador=#0097BF
 fondo-ctu=rgba(2, 18, 31,0.3)
-
+.orange
+	background orange
+.red
+	background red
+.yellow
+	background yellow
 a 
 	text-decoration none
 	margin 0
@@ -74,43 +82,70 @@ header
 	margin-top 35px
 section
 	.section2
-		background-image url("../img/slider.png")
+		background-image url("../img/slider-image.png")
 		height 438px
 		//overflow hidden
 		
 		.slider
 			margin 0
 			padding-top 22px
-			.bxslider
-				margin 0
-				padding 0
-				li
-					display block
-					.panels
-						//display inline-block
-						width 960px
-						height 340px
-						//margin-top 20px
-						//padding-top 25px
-						overflow hidden	
-						.panel
-							lis
-							display inline-block
-							float left
-							font-size 0
+			li
+				display block
+				.panels
+					width 960px
+					height 340px
+					overflow hidden	
+					//background orange
+					.panel
+						display inline-block
+						float left
+						font-size 0
+						width 289px
+						//margin-left 36px
+						margin-left 30px	
+						figure
+							background sombra
 							width 289px
-							//margin-left 36px
-							margin-left 30px	
-							figure
-								margin-bottom 32px
-							.title
-								font-size 14px
-								color blanco
-								margin-top 32px
-							.texto
-								font-size 14px
-								color gris
-								margin-top 18px
+							height 175px
+							margin-bottom 32px
+						.title
+							font-size 14px
+							color blanco
+							margin-top 32px
+						.texto
+							font-size 14px
+							color gris
+							margin-top 18px
+		.line-slider
+			margin-top -28px
+			z-index 200
+			//display inline-block
+			//text-align center
+			//display block
+			height 14px
+			.content-line
+				width 330px
+				margin 0 auto
+				.menos
+					position relative
+					color azul-oscuro
+					float left
+					margin-right 10px
+				.line
+					height 14px	
+					width 290px
+					background negro
+					border-radius 5px
+					border-bottom solid 2px sombra-negra
+					position relative
+					text-align center
+					float left
+					margin-left 5px
+				.mas
+					position relative
+					color azul-oscuro	
+					float right	
+					margin-left 10px
 section
 	.section3
 		height 185px
@@ -184,4 +219,44 @@ footer
 						border-radius 5px
 						border-bottom solid 2px sombra 
 						height 30px	
-		
+.orange
+	background orange
+.red
+	background red
+.yellow
+	background yellow		
+
+/*Modificaciones al sider para que se ajuste al diseno*/
+.bx-wrapper .bx-viewport 
+	box-shadow none
+	border none
+	left -5px
+	background none
+
+.bx-wrapper .bx-pager
+.bx-wrapper .bx-controls-auto
+	position absolute
+	bottom -47px
+	width 100%
+	z-index 400
+	
+.bx-wrapper .bx-pager.bx-default-pager a 
+	background negro
+	text-indent -9999px
+	display block
+	width 90px
+	line-height 14px
+	height 12px
+	margin 0 5px
+	outline 0
+	border-radius 5px 
+	 
+.bx-wrapper .bx-pager.bx-default-pager a:hover
+	background negro
+.bx-wrapper .bx-pager.bx-default-pager a.active
+	background deslizador
+
+
+
+
+
